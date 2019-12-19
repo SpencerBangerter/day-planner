@@ -33,7 +33,7 @@ $('.saveBtn').click(function() {
     var text = $(this).parent().find("textarea").val()
     var hourDisplay = $(this).parent().find("textarea").attr("id")
     localStorage.setItem(hourDisplay, text)
-
+    $(this).parent().find("textarea").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 })
 
 function colorizeHours() {
