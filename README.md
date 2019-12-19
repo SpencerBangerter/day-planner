@@ -7,11 +7,11 @@ Day Planner App using Moment.js and jQuery
 ## Contents and Instructions
 This is an app that will save your day's events as you put them in each morning. You can tell what items you have coming up based upon the color of the textbox. Green is in the future, red is present, and gray is in the past. It displays the curent date and time in the heading of the application and dynamically updates using moment.js. 
 
-![Screenshot of Main App]()
+![Screenshot of Main App](https://github.com/SpencerBangerter/day-planner/blob/master/assets/screenshots/base.png)
 
 Entering text and hitting the blue save button will flash the saved text, and then save the text in the box to local storage. 
 
-![Screenshot of Saved Text]()
+![Screenshot of Saved Text](https://github.com/SpencerBangerter/day-planner/blob/master/assets/screenshots/savedtext.png)
 
 
 ## Credits
