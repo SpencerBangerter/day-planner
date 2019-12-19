@@ -26,7 +26,7 @@ body {
   }
   
   .time-block{
-    text-align: center;
+    text-align: center; 
     border-radius: 15px;
   }
   
@@ -38,35 +38,61 @@ body {
   
   .hour {
     background-color: #ffffff;
-    color: #000000;
+    color: black;
     border-top: 1px dashed #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: large;
   }
   
   .past {
     background-color: #d3d3d3;
-    color: white;
+    color: black;
   }
   
   .present {
     background-color: #ff6961;
-    color: white;
+    color: black;
   }
   
   .future {
     background-color: #77dd77;
-    color: white;
+    color: black;
   }
   
+  /* Need to have a better solution to center icon */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+    line-height: 80px;
+    vertical-align: middle; 
+    text-align: center !important; 
   }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
+
+
+  .saveBtn i  {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    /* z-index: 999; */
+  }
+
+  .saveBtn:hover, i:hover {
+    color:black;
     transition: all .3s ease-in-out;
   }
-  
+
+  @media only screen and (max-width: 766px) {
+    .saveBtn i  {
+      margin: auto;
+      height: 50%;
+      width: 50%;
+      max-height: 5px;
+      max-width: 5px;
+      font-size: 1em !important;
+
+    }
+    }
