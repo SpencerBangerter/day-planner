@@ -37,12 +37,9 @@ $('.saveBtn').click(function() {
 })
 
 function colorizeHours() {
-
     var hourDiv = $('.col-sm-10')
     for (var i = 0; i < hourDiv.length; i++) {
         let currentHourDiv = $(hourDiv[i]);
-        console.log(currentHourDiv.attr('data-value'))
-        console.log(currentHour)
         if (currentHourDiv.attr('data-value') < currentHour) {
             currentHourDiv.addClass('past')
         } else if (currentHourDiv.attr('data-value') > currentHour){ 
@@ -51,3 +48,5 @@ function colorizeHours() {
     }
 }
 colorizeHours()
+
+setInterval(function(){ colorizeHours() }, 60 * 1000)
